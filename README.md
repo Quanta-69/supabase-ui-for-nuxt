@@ -4,7 +4,9 @@
 ## Setup
 Make sure to install dependencies (npm install)
 
-Get your Nuxt .env variables and create your .env file.
+Get your Nuxt supabase .env variables and create your .env file.
+
+Generate Your own database types under app/types
 
 ## Description
 This template is the Vue version of the Supabase UI which was made with shadcn (next) and supabase.
