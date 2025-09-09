@@ -27,7 +27,7 @@ Houses different middleware logic (only 1 for now).
 Can handle complete authentication (including email OTP)
 More components coming soon!
 
-                                            **ENJOY!**
+                                            ENJOY!
 
 
 
