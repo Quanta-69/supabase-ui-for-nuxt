@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   supabase: {
     redirect: false,
     redirectOptions: {
-    login: '/',
+    login: '/', /* This makes that default forceful middleware to return home if you don't have a middleware */
     callback: '/',
     include: [],
     exclude: []

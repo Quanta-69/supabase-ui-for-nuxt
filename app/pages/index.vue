@@ -1,6 +1,5 @@
 <script lang="ts" setup>
-const { profile, user } = useAuthorization();
-const { isAuthenticated } = useAuthState();
+const { isAuthenticated, user } = useAuthState();
 </script>
 
 <template>
@@ -8,12 +7,12 @@ const { isAuthenticated } = useAuthState();
         <div class="w-full max-w-sm">
             <template v-if="isAuthenticated && user?.role === 'authenticated'">
                 <h1 class="text-2xl font-bold">Authenticated</h1>
-                <h2>Hello {{ profile?.username }}</h2>
+                <h2>Hello {{ user?.email }}</h2>
                 <supabase-logout-button />
             </template>
             <template v-else>
                 <h1 class="text-2xl font-bold">Unauthenticated</h1>
-                <h2>You need to log in</h2>
+                <h2>You need to <nuxt-link class="underline font-bold text-xl" to="auth/login">login</nuxt-link></h2>
             </template>
         </div>
     </div>
